@@ -1,6 +1,7 @@
-function entrar(){
-    var area = document.getElementById('area');
-    var texto = prompt('escreva qualquer coisa');
-
-    area.innerHTML = 'bem vindo'+texto;
+function acao(){
+    document.write('execuntando')
 }
+
+
+//temporizador
+setInterval(acao,1000);
