@@ -1,16 +1,14 @@
 import React,{Component} from 'react';
-import Membro from './components/membro';
 
-
-class App extends Component {
+class Membro extends Component {
    render(){
        return(
            <div>
-               <Membro/>
+               membro
            </div>
        );
    }
 
     
 }
-export default App;
+export default Membro ;
