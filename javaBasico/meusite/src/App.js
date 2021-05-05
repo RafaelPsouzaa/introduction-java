@@ -28,7 +28,7 @@ import styled from 'styled-components';
         <h3>Porcentagem Gorjeta</h3>
          <Input placeholder = "Digite a Porcentagem" type= "number" value ={gorjeta} onChange={gorjeInput}/>
             <h3>valor Conta R$ {valor}</h3>
-            <h3> valor gorjeta R$ {gorjeta}</h3>
+            <h3> valor gorjeta R$ {(gorjeta*valor)/100}</h3>
             <h3>Essse e o valor a ser pago R$ {valor +((gorjeta*valor)/100) }</h3>
 
 
