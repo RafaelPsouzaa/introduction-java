@@ -9,14 +9,15 @@ import styled from 'styled-components';
         border:1px solid #000;
         `;
     function App(){
+        
         const [valor,setValor] = useState('');
         const [gorjeta,setGorjeta] = useState('');
-
+        
         const handleInput = (e) =>{
-            setValor(e.target.value)
+            setValor(parseFloat (e.target.value))
         };
         const gorjeInput =(e) =>{
-            setGorjeta(e.target.value)
+            setGorjeta (parseFloat(e.target.value))
         };
 
         return (
@@ -26,6 +27,11 @@ import styled from 'styled-components';
         <Input placeholder = "Digite Valor da Conta" type="number" value ={valor} onChange={handleInput}/><br/>
         <h3>Porcentagem Gorjeta</h3>
          <Input placeholder = "Digite a Porcentagem" type= "number" value ={gorjeta} onChange={gorjeInput}/>
+            <h3>valor Conta R$ {valor}</h3>
+            <h3> valor gorjeta R$ {gorjeta}</h3>
+            <h3>Essse e o valor a ser pago R$ {valor +((gorjeta*valor)/100) }</h3>
+
+
         </> 
          );
         }
