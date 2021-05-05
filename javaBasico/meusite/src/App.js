@@ -11,7 +11,7 @@ import styled from 'styled-components';
     function App(){
         const [valor,setValor] = useState('');
         const [gorjeta,setGorjeta] = useState('');
-        
+
         const handleInput = (e) =>{
             setValor(e.target.value)
         };
@@ -21,10 +21,11 @@ import styled from 'styled-components';
 
         return (
         <>
-        <h1>Calculadora Gorjeta</h1>
-        <div><h1>valor conta</h1></div><br/>
-        <Input type="text" value ={valor} onChange={handleInput}/><br/>
-        <br/> <Input type= "text" value ={gorjeta} onChange={gorjeInput}/>
+        <h1>Calculadora Gorjeta</h1><hr/>
+        <h3>valor conta</h3>
+        <Input placeholder = "Digite Valor da Conta" type="number" value ={valor} onChange={handleInput}/><br/>
+        <h3>Porcentagem Gorjeta</h3>
+         <Input placeholder = "Digite a Porcentagem" type= "number" value ={gorjeta} onChange={gorjeInput}/>
         </> 
          );
         }
