@@ -11,7 +11,7 @@ import styled from 'styled-components';
     function App(){
         
         const [valor,setValor] = useState('');
-        const [gorjeta,setGorjeta] = useState('');
+        const [gorjeta,setGorjeta] = useState('10');
         
         const handleInput = (e) =>{
             setValor(parseFloat (e.target.value))
